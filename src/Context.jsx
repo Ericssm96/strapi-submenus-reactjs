@@ -19,3 +19,7 @@ export const AppProvider = (props) => {
         </AppContext.Provider>
     )
 }
+
+export const useGlobalContext = () => {
+    return useContext(AppContext);
+}
