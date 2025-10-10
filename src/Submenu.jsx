@@ -7,7 +7,7 @@ export const Submenu = () => {
   console.log(currentPage);
 
   return (
-    <div className="submenu">
+    <div className={currentPage ? "submenu show-submenu" : "submenu"}>
       <h5>{currentPage?.page}</h5>
 
       <div className="submenu-links" style={{display:"grid", gridTemplateColumns: currentPage?.links.length > 3 ? 'repeat(2, 1fr)' : '1fr'}}>
