@@ -14,7 +14,6 @@ export const Sidebar = () => {
         </button>
         <div className="sidebar-links">
           {subLinks.map((item) => {
-            console.log(item);
             const { pageId, page, links } = item;
             return (
               <article key={pageId}>
